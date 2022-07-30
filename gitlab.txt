@@ -1,0 +1,5 @@
+username: thomasminato
+email: thomasminato04@gmail.com
+password: skaksdkfdk)^@&
+
+git repo: https://gitlab.a4apple.cn/gima/

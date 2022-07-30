@@ -1,0 +1,492 @@
+{
+	"info": {
+		"_postman_id": "907d43c7-72c4-419b-a553-d7452b31d89e",
+		"name": "DDEP API Testing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "2 Level DDEP API",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "GodmarkTest",
+						"value": "TheTestValue",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "Hello",
+							"value": "Bye",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://powerful-reaches-77485.herokuapp.com/dapi/ddep/godmark/test/?ttt=ttt",
+					"protocol": "https",
+					"host": [
+						"powerful-reaches-77485",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"dapi",
+						"ddep",
+						"godmark",
+						"test",
+						""
+					],
+					"query": [
+						{
+							"key": "ttt",
+							"value": "ttt"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2 Level DDEP API  - Original API",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "GodmarkTest",
+						"value": "TheTestValue",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"GodmarkTest\":\"TestValue\"}",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.a4appz.com/apim/test/ddep/api/?ttt=ttt",
+					"protocol": "https",
+					"host": [
+						"api",
+						"a4appz",
+						"com"
+					],
+					"path": [
+						"apim",
+						"test",
+						"ddep",
+						"api",
+						""
+					],
+					"query": [
+						{
+							"key": "ttt",
+							"value": "ttt"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "1 Level DDEP API",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "GodmarkTest",
+						"value": "TheTestValue",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<XML></XXX>",
+					"options": {
+						"raw": {
+							"language": "html"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://powerful-reaches-77485.herokuapp.com/dapi/ddep/test/myapi/?ttt=ttt",
+					"protocol": "https",
+					"host": [
+						"powerful-reaches-77485",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"dapi",
+						"ddep",
+						"test",
+						"myapi",
+						""
+					],
+					"query": [
+						{
+							"key": "ttt",
+							"value": "ttt"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "1 Level DDEP API  - Original API Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "GodmarkTest",
+						"value": "TheTestValue",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "Hello",
+							"value": "Bye",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://powerful-reaches-77485.herokuapp.com/dapi/ddep/godmark/test/?ttt=ttt",
+					"protocol": "https",
+					"host": [
+						"powerful-reaches-77485",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"dapi",
+						"ddep",
+						"godmark",
+						"test",
+						""
+					],
+					"query": [
+						{
+							"key": "ttt",
+							"value": "ttt"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "OAuth Token Test",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "GodmarkTest",
+						"value": "TheTestValue",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "gima",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "gimademo",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "amit",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "AmitPatel",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://powerful-reaches-77485.herokuapp.com/dapi/ddep/gima/oauth",
+					"protocol": "https",
+					"host": [
+						"powerful-reaches-77485",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"dapi",
+						"ddep",
+						"gima",
+						"oauth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "OAuth Token Test  - Original API",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "GodmarkTest",
+						"value": "TheTestValue",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "gima",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "gimademo",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "amit",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "AmitPatel",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://powerful-reaches-77485.herokuapp.com/dapi/ddep/gima/oauth",
+					"protocol": "https",
+					"host": [
+						"powerful-reaches-77485",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"dapi",
+						"ddep",
+						"gima",
+						"oauth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "OAuth API Test",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer eyJraWQiOiJkZWZhdWx0LWdyYXZpdGVlLUFNLWtleSIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiJhMmEyYTVlMS04ZWY4LTRiYzItYTJhNS1lMThlZjgwYmMyMzAiLCJhdWQiOiJnaW1hIiwiZG9tYWluIjoiZ2ltYS1nYXRld2F5IiwiaXNzIjoiaHR0cHM6XC9cL2FwaS5hNGFwcHouY29tXC9hbVwvZ2ltYS1nYXRld2F5XC9vaWRjIiwiZXhwIjoxNjUyOTMzNjc3LCJpYXQiOjE2NTI5MjY0NzcsImp0aSI6InAyOURRcUZCNEZTV3E0ZGcyQ0pmT2J0cmdpaDNTTXVvWHNiLTh0ZjFqa0EifQ.14479wGmQiwlulJgWRBUqoxBsjqHEoR4vNUtcKccyew",
+						"type": "text"
+					},
+					{
+						"key": "company_code",
+						"value": "Gima",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://powerful-reaches-77485.herokuapp.com/dapi/ddep/oauth/api",
+					"protocol": "https",
+					"host": [
+						"powerful-reaches-77485",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"dapi",
+						"ddep",
+						"oauth",
+						"api"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "OAuth API Test - Original API",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer eyJraWQiOiJkZWZhdWx0LWdyYXZpdGVlLUFNLWtleSIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiJhMmEyYTVlMS04ZWY4LTRiYzItYTJhNS1lMThlZjgwYmMyMzAiLCJhdWQiOiJnaW1hIiwiZG9tYWluIjoiZ2ltYS1nYXRld2F5IiwiaXNzIjoiaHR0cHM6XC9cL2FwaS5hNGFwcHouY29tXC9hbVwvZ2ltYS1nYXRld2F5XC9vaWRjIiwiZXhwIjoxNjUyNzgzOTI3LCJpYXQiOjE2NTI3NzY3MjcsImp0aSI6IkVWN0RqQ2ZtcHZEMGVjSEwtV0pDVmVHcjVrMS1GckhhcWp5RVotUmJmRUEifQ.IV6NirwTwbN8FPxDvN_f7K7cNdrE4tBRjy3M7TUQcLk",
+						"type": "text"
+					},
+					{
+						"key": "company_code",
+						"value": "Gima",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "https://api.a4appz.com/apim/Gima/Demo/ProjectInfo",
+					"protocol": "https",
+					"host": [
+						"api",
+						"a4appz",
+						"com"
+					],
+					"path": [
+						"apim",
+						"Gima",
+						"Demo",
+						"ProjectInfo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "OAuth API Test - Original API Test303",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer eyJraWQiOiJkZWZhdWx0LWdyYXZpdGVlLUFNLWtleSIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiJhMmEyYTVlMS04ZWY4LTRiYzItYTJhNS1lMThlZjgwYmMyMzAiLCJhdWQiOiJnaW1hIiwiZG9tYWluIjoiZ2ltYS1nYXRld2F5IiwiaXNzIjoiaHR0cHM6XC9cL2FwaS5hNGFwcHouY29tXC9hbVwvZ2ltYS1nYXRld2F5XC9vaWRjIiwiZXhwIjoxNjUzMzc0MDAxLCJpYXQiOjE2NTMzNjY4MDEsImp0aSI6IlpFLWxNRDczbXdrRUxhVEhYVUhoNUVaU0l5WDVnVEZSU1lIbTRkVzR2dGcifQ._A2o7o9q_Dvfva43EfXPQqb9iFEXGpVsUtonalQJdmQ",
+						"type": "text"
+					},
+					{
+						"key": "company_code",
+						"value": "Gima",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "MyTest",
+							"value": "MyTest123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://api.a4appz.com/apim/Gima/Demo/Test303/",
+					"protocol": "https",
+					"host": [
+						"api",
+						"a4appz",
+						"com"
+					],
+					"path": [
+						"apim",
+						"Gima",
+						"Demo",
+						"Test303",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API Key Test",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-SiiA-API-KEY",
+						"value": "fa0f7999-3d56-4289-810c-22d4729f1e0b",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"GodmarkTest\":\"mytest\"}"
+				},
+				"url": {
+					"raw": "https://powerful-reaches-77485.herokuapp.com/dapi/ddep/api/key",
+					"protocol": "https",
+					"host": [
+						"powerful-reaches-77485",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"dapi",
+						"ddep",
+						"api",
+						"key"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API Key Test - Original API",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-SiiA-API-KEY",
+						"value": "fa0f7999-3d56-4289-810c-22d4729f1e0b",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "https://api.a4appz.com/apim/Api/Key/Demo",
+					"protocol": "https",
+					"host": [
+						"api",
+						"a4appz",
+						"com"
+					],
+					"path": [
+						"apim",
+						"Api",
+						"Key",
+						"Demo"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
